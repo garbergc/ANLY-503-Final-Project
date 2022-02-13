@@ -20,28 +20,28 @@ Source: United States Census Bureau - https://www.census.gov/data/tables/time-se
 
 Gender Representation In Data Science 
 Description: 
-This dataset looks at the gender divide in Data Science between 1990 and 2018. Using survey data of 20,000+ respondents, the dataset contains information about men and women’s education levels, length of time coding, perceptions of ML/AI, use of different technical tools, and more. We intend to use it to investigate how female representation and engagement with technical fields has evolved since the 1990s.
-Source: Kaggle - https://www.kaggle.com/martinlbarron/the-gender-divide-in-data-science/data?select=multipleChoiceResponses.csv
+This dataset looks at the gender divide in Data Science between 1990 and 2018. Using survey data of 20,000+ respondents, the dataset contains information about men and women’s education levels, length of time coding, perceptions of ML/AI, use of different technical tools, and more. We intend to use it to investigate how female representation and engagement with technical fields has evolved since the 1990s. <br />
+Source: Kaggle - https://www.kaggle.com/martinlbarron/the-gender-divide-in-data-science/data?select=multipleChoiceResponses.csv <br />
 
 Graduates By Gender And Field Of Education
 Description: 
-This dataset provides information on college graduates’ majors by gender, country, and year. This dataset will be used to find a connection between what women study in school and their participation in STEM fields.
-Source: Organization For Economic Co-Operation And Development (OECD) - https://stats.oecd.org/Index.aspx?QueryId=109881
+This dataset provides information on college graduates’ majors by gender, country, and year. This dataset will be used to find a connection between what women study in school and their participation in STEM fields. <br />
+Source: Organization For Economic Co-Operation And Development (OECD) - https://stats.oecd.org/Index.aspx?QueryId=109881 <br />
 
 Fertility And Labor Force Participation
 Description:
-This dataset provides information on the percentage of women active in the labor force by country and average births per woman per country for the years 1960 to 2000. It also provides absolute and relative change calculated by country. We will use this dataset to analyze how fertility rates and participation in the labor force may be related to the number of women in STEM in those regions.
-Source: Our World In Data (OWID) - https://ourworldindata.org/grapher/fertility-and-female-labor-force-participation
+This dataset provides information on the percentage of women active in the labor force by country and average births per woman per country for the years 1960 to 2000. It also provides absolute and relative change calculated by country. We will use this dataset to analyze how fertility rates and participation in the labor force may be related to the number of women in STEM in those regions. <br />
+Source: Our World In Data (OWID) - https://ourworldindata.org/grapher/fertility-and-female-labor-force-participation <br />
 
 Parental Leave By Country 
 Description:
-This dataset contains information on the length of maternity leave, parental leave, and paid father-specific leave per country. This dataset has a time element and geospatial element (years from 1970-2020 and country names). We will use this dataset to explore the length of maternity leave, parental leave, and paid father-specific leave correspondence with women in STEM in those countries.
-Source: Organization For Economic Co-Operation And Development (OECD) - https://stats.oecd.org/index.aspx?queryid=54760
+This dataset contains information on the length of maternity leave, parental leave, and paid father-specific leave per country. This dataset has a time element and geospatial element (years from 1970-2020 and country names). We will use this dataset to explore the length of maternity leave, parental leave, and paid father-specific leave correspondence with women in STEM in those countries. <br />
+Source: Organization For Economic Co-Operation And Development (OECD) - https://stats.oecd.org/index.aspx?queryid=54760 <br />
 
 Test Scores By Educational Subject And Gender  
-Description: This dataset contains information on boy and girl math, science, and reading test scores per country dating back to 2003. This dataset has a time element and geospatial element. We will use this dataset to explore how these test scores influence women in STEM in those countries.
-Source: Organization For Economic Co-Operation And Development (OECD) - https://data.oecd.org/pisa/reading-performance-pisa.htm#indicator-chart
+Description: This dataset contains information on boy and girl math, science, and reading test scores per country dating back to 2003. This dataset has a time element and geospatial element. We will use this dataset to explore how these test scores influence women in STEM in those countries. <br />
+Source: Organization For Economic Co-Operation And Development (OECD) - https://data.oecd.org/pisa/reading-performance-pisa.htm#indicator-chart <br />
 
 Graduates And New Entrants By Educational And Occupational Fields  
-Description: This dataset contains information on the percentage of females and males gaining degrees in specific fields and entering the workforce by country from 2005 to 2019. This dataset has a time element and geospatial element. This will be a great dataset to see the distribution of men vs. women among degrees and fields per country. 
-Source: Organization For Economic Co-Operation And Development (OECD) - https://stats.oecd.org/Index.aspx?QueryId=109881
+Description: This dataset contains information on the percentage of females and males gaining degrees in specific fields and entering the workforce by country from 2005 to 2019. This dataset has a time element and geospatial element. This will be a great dataset to see the distribution of men vs. women among degrees and fields per country. <br />
+Source: Organization For Economic Co-Operation And Development (OECD) - https://stats.oecd.org/Index.aspx?QueryId=109881 <br />
