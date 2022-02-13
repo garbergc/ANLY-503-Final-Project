@@ -9,8 +9,11 @@ Gender discrimination in STEM fields is a prominent human rights issue that mani
 ### Datasets:
 Gender Inequality News Headlines 
 Description: This dataset contains news article headline text data that pertains to the topics of women in STEM, women in tech, gender equality, and gender inequality. We intend to leverage this dataset to investigate how the media portrays gender inequities and women in tech. Therefore, sentiment will be derived from each headline/description and will be the label or the classification variable in this dataset. Based on how this information is utilized in downstream analysis and in conjunction with other files, the date range may expand and the topics may evolve. 
+
 Source: News API - https://newsapi.org/
+
 Dataset - https://github.com/garbergc/ANLY-503-Final-Project/blob/main/NewHeadlines_2022_02_13_v2.csv
+
 Code - https://github.com/garbergc/ANLY-503-Final-Project/blob/main/503_WIT_News_Headlines.py
 
 STEM Occupation Earnings By Gender 
