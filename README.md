@@ -8,18 +8,15 @@ Gender discrimination in STEM fields is a prominent human rights issue that mani
 
 ### Datasets:
 Gender Inequality News Headlines 
-Description: This dataset contains news article headline text data that pertains to the topics of women in STEM, women in tech, gender equality, and gender inequality. We intend to leverage this dataset to investigate how the media portrays gender inequities and women in tech. Therefore, sentiment will be derived from each headline/description and will be the label or the classification variable in this dataset. Based on how this information is utilized in downstream analysis and in conjunction with other files, the date range may expand and the topics may evolve. 
-
-Source: News API - https://newsapi.org/
-
-Dataset - https://github.com/garbergc/ANLY-503-Final-Project/blob/main/NewHeadlines_2022_02_13_v2.csv
-
-Code - https://github.com/garbergc/ANLY-503-Final-Project/blob/main/503_WIT_News_Headlines.py
+Description: This dataset contains news article headline text data that pertains to the topics of women in STEM, women in tech, gender equality, and gender inequality. We intend to leverage this dataset to investigate how the media portrays gender inequities and women in tech. Therefore, sentiment will be derived from each headline/description and will be the label or the classification variable in this dataset. Based on how this information is utilized in downstream analysis and in conjunction with other files, the date range may expand and the topics may evolve. <br />
+Source: News API - https://newsapi.org/ <br /> 
+Dataset - https://github.com/garbergc/ANLY-503-Final-Project/blob/main/NewHeadlines_2022_02_13_v2.csv <br />
+Code - https://github.com/garbergc/ANLY-503-Final-Project/blob/main/503_WIT_News_Headlines.py <br />
 
 STEM Occupation Earnings By Gender 
 Description:
-This dataset, provided by the American Community Survey in 2019, offers a comprehensive overview of median earnings by gender across most STEM fields. Looking at computer occupations, mathematical scientific operations, engineering jobs, life sciences and physical sciences jobs, and more, this dataset does a thorough job comparing earnings across different types of STEM jobs to highlight how the gender pay gap is not homogenous within STEM. 
-Source: United States Census Bureau - https://www.census.gov/data/tables/time-series/demo/income-poverty/stem-occ-sex-med-earnings.html
+This dataset, provided by the American Community Survey in 2019, offers a comprehensive overview of median earnings by gender across most STEM fields. Looking at computer occupations, mathematical scientific operations, engineering jobs, life sciences and physical sciences jobs, and more, this dataset does a thorough job comparing earnings across different types of STEM jobs to highlight how the gender pay gap is not homogenous within STEM. <br />
+Source: United States Census Bureau - https://www.census.gov/data/tables/time-series/demo/income-poverty/stem-occ-sex-med-earnings.html <br />
 
 Gender Representation In Data Science 
 Description: 
