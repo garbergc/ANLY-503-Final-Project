@@ -11,6 +11,7 @@ Data Source: https://stats.oecd.org/Index.aspx?QueryId=109881
 
 ## Load in necessary packages
 import pandas as pd
+import numpy as np
 
 
 ## Load in necessary data
@@ -43,7 +44,31 @@ students_clean.isna().sum() # 4,585 NAs in column "Value" --> these are useless 
 # Remove rows with NAs for "Value"
 students_clean = students_clean[students_clean['Value'].notna()]
 
+# Filter out EU and OECD totals later
+
+# 5. Spread 
+students_wide = students_clean.pivot(index=['Country', 'Year', 'Field'],columns='Gender',values='Value')
+
+# Make indices into columns
+students_wide = students_wide.reset_index(level=['Country', 'Year', 'Field'])
+
+# 5. Feature generation
+## Add column "Ratio" for the ratio of male to female entrants in each field (by year and country)
+students_wide['Ratio'] = students_wide['Male']/students_wide['Female']
+
+## Add column "STEM_Status" to indicate whether the field is a stem or non-stem field
+students_wide["STEM_Status"] = np.select(
+    [
+        students_wide["Field"].isin(['Agriculture, forestry, fisheries and veterinary', 'Engineering, manufacturing and construction',
+                                     'Health and welfare', 'Information and Communication Technologies (ICTs)',
+                                     'Natural sciences, mathematics and statistics']),
+        students_wide["Field"].isin(['Arts and humanities', 'Business, administration and law', 'Education',
+                                     'Generic programmes and qualifications', 'Services', 'Social sciences, journalism and information']),
+    ],
+    ["STEM", "Non-STEM"],
+    default=" ",
+)
 
 # Write to csv
-students_clean.to_csv('Clean_Datasets/OECD_Students.csv', index=False)
+students_wide.to_csv('Clean_Datasets/OECD_Students.csv', index=False)
 
