@@ -55,7 +55,7 @@ students_wide = students_wide.reset_index(level=['Country', 'Year', 'Field'])
 # 5. Feature generation
 ## Add column "Ratio" for the ratio of male to female entrants in each field (by year and country)
 students_wide['Ratio'] = students_wide['Male']/students_wide['Female']
-students_wide['Ratio' == "inf"] = 0
+students_wide['Ratio'] = students_wide['Ratio'].replace(['inf'],0)
 
 ## Add column "STEM_Status" to indicate whether the field is a stem or non-stem field
 students_wide["STEM_Status"] = np.select(
