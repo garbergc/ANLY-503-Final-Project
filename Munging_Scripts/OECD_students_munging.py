@@ -14,7 +14,7 @@ import pandas as pd
 
 
 ## Load in necessary data
-students = pd.read_csv("OECD_StudentsByGenderField.csv")
+students = pd.read_csv("Raw_Datasets/OECD_StudentsByGenderField.csv")
 
 
 ## MUNGING
@@ -29,10 +29,21 @@ students.describe()
 # 2. Remove unnecessary columns before further cleaning
 students_clean = students.drop(columns = ['COUNTRY', 'INDICATOR', 'Indicator',
                                           'EDUCATION_LEV', 'Education level', 'SEX',
-                                          'MOBILITY', 'EDUCATION_FIELD', 'YEAR', 
-                                          'Flag Codes', 'Flags'])
+                                          'MOBILITY', 'Mobility status','EDUCATION_FIELD', 
+                                          'YEAR', 'Flag Codes', 'Flags'])
+print(students_clean)
 
-# 3. Remove rows with NAs for "Value"
+
+# 3. Fix incorrect values
+students_clean = students_clean[students_clean['Year'] != "Latest available year"] 
+
+# 4. Count NAs across the whole dataframe
+students_clean.isna().sum() # 4,585 NAs in column "Value" --> these are useless to us
+
+# Remove rows with NAs for "Value"
+students_clean = students_clean[students_clean['Value'].notna()]
 
 
-# 4. Fix incorrect values
+# Write to csv
+students_clean.to_csv('Clean_Datasets/OECD_Students.csv', index=False)
+
