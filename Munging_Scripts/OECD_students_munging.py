@@ -30,7 +30,6 @@ students.describe()
 # 2. Remove unnecessary columns before further cleaning
 students_clean = students.drop(
     columns=[
-        "COUNTRY",
         "INDICATOR",
         "Indicator",
         "EDUCATION_LEV",
@@ -60,11 +59,11 @@ students_clean = students_clean[students_clean["Value"].notna()]
 
 # 5. Spread
 students_wide = students_clean.pivot(
-    index=["Country", "Year", "Field"], columns="Gender", values="Value"
+    index=["COUNTRY", "Country", "Year", "Field"], columns="Gender", values="Value"
 )
 
 # Make indices into columns
-students_wide = students_wide.reset_index(level=["Country", "Year", "Field"])
+students_wide = students_wide.reset_index(level=["COUNTRY", "Country", "Year", "Field"])
 
 # 5. Feature generation
 ## Add column "Ratio" for the ratio of male to female entrants in each field (by year and country)
