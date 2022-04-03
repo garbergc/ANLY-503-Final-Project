@@ -38,6 +38,10 @@ vignettes/*.pdf
 # R Environment Variables
 .Renviron
 .Rproj.user
+*.Rproj
 
 # DS Stores
 .DS_Store*
+
+# temp plots
+temp-plot.html
