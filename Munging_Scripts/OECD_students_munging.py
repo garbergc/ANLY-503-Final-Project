@@ -70,6 +70,9 @@ students_wide = students_wide.reset_index(level=["COUNTRY", "Country", "Year", "
 students_wide["Ratio"] = students_wide["Male"] / students_wide["Female"]
 students_wide["Ratio"] = students_wide["Ratio"].replace(["inf"], 0)
 
+## Add column "Difference" for the percentage points higher men are than women
+students_wide["Difference"] = students_wide["Male"] - students_wide["Female"]
+
 ## Add column "STEM_Status" to indicate whether the field is a stem or non-stem field
 students_wide["STEM_Status"] = np.select(
     [
@@ -96,6 +99,10 @@ students_wide["STEM_Status"] = np.select(
     ["STEM", "Non-STEM"],
     default=" ",
 )
+
+## Now gather back 
+students_long = students_wide.melt(id_vars = ['COUNTRY', 'Country', 'Year', 'Field', 'STEM_Status'], 
+                                   value_vars = ['Total', 'Female', 'Male', 'Ratio'], var_name = 'Type')
 
 # Write to csv
 students_wide.to_csv("Clean_Datasets/OECD_Students.csv", index=False)
